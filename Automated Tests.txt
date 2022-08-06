@@ -1,0 +1,5 @@
+- Automated tests that can be performed in this application: 
+1 - Performance tests: load test and stress test to verify if the system support the load of access
+2 - API testing: To verify the functionality, reliability and security of the programming interfaces
+3 - Unit Testing: To understand the functionality of each unit in the application.
+4 - End to End testing: To test the system like from start to finish
