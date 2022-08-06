@@ -1,14 +1,13 @@
 // <reference types="Cypress" />
 
-describe('Test cases to My Task Feature ', function() {
+describe('Creating a Task', () => {
     beforeEach(() => {
         cy.visit('https://qa-test.avenuecode.io/tasks')
         cy.get('#user_email').type('alicelinsc.malzac@gmail.com').should('have.value', 'alicelinsc.malzac@gmail.com')
         cy.get('#user_password').type('assessmentqa').should('have.value','assessmentqa')
         cy.get('.btn').click()
         cy.get('.alert').should('be.visible')
-    });
-
+    })
     it('Verify that I see the home screen when I log in', () => {
         cy.get('.navbar-right > :nth-child(1) > a').should('be.visible') //Verifys the "Welcome, Alice Malzac" message
         cy.get('#my_task').should('be.visible')  
@@ -65,4 +64,4 @@ describe('Test cases to My Task Feature ', function() {
         cy.get(':nth-child(1) > .task_body > .ng-scope').contains('New Task Test Edit')
 
     })
-  })
+})

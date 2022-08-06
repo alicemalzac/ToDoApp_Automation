@@ -7,7 +7,7 @@ describe('Creating a SubTask', () => {
     cy.get('#user_password').type('assessmentqa').should('have.value','assessmentqa')
     cy.get('.btn').click()
     cy.get('.alert').should('be.visible')
-});
+  })
   it('Verify that I can create a Subtask', () =>  {
     //Creates a Task
     cy.get('#new_task').type('New Task').should('have.value', 'New Task')
