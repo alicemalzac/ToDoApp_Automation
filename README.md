@@ -2,15 +2,19 @@
 ## About the project
 This project was developed with Cypress Framework based on the following User Stories: 
 
+```
 US#1 - Create Task
 As a ToDo App user
 I should be able to create a task
 So I can manage my tasks
+```
 
+```
 US#2 - Create SubTask
 As a ToDo App user
 I should be able to create a subtask
 So I can break down my tasks into smaller pieces
+```
 
 ## Project architecture 
 This project has three important files: 
